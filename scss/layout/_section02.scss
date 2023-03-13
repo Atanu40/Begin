@@ -1,0 +1,25 @@
+.section-02{
+  padding: 30px 0px 20px 0px;
+  background-color: var(--sec02-bg-color);
+}
+
+.section-02.dark1 {
+  background-color: #e1d4d4;
+}
+
+.section-02-container__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  flex-wrap: wrap;
+ 
+
+  @media screen and (max-width: 530px) {
+    .section-02__img-item{
+       //flex-basis: 31%;
+       width: 113px;
+       height: auto;
+    }
+  }
+}

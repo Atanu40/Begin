@@ -1,0 +1,154 @@
+@import "abstract/mixin.scss";
+@import "abstract/variable.scss";
+@import "component/button.scss";
+@import "layout/_nav.scss";
+@import "layout/_hero.scss";
+@import "layout/_section02.scss";
+@import "layout/_section03.scss";
+@import "layout/_section04.scss";
+@import "layout/_section05.scss";
+@import "layout/_section06.scss";
+@import "layout/_section07.scss";
+@import "layout/_section08.scss";
+@import "layout/_section09.scss";
+@import "layout/_section10.scss";
+@import "layout/_section11.scss";
+@import "layout/_section12.scss";
+@import "layout/_footer.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,400;1,700;1,900&family=Work+Sans:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,400;1,700;1,900&family=Work+Sans:wght@500&display=swap');
+
+:root {
+
+  --section-heading-primary-color: #FFFFFF;
+  --section-heading-secondary-color: #1EE1B3;
+
+  --section-txt-color: #FFFFFF;
+
+  --nav-bg-color: black;
+  --nav-txt-color: white;
+  --nav-transparent-btn-color: white;
+  --nav-transparent-btn-color-hover: #1EE1B3;
+  --nav-cyan-btn-bg-color: #1EE1B3;              
+  --nav-cyan-btn-color: #FFFFFF;              
+  --nav-cyan-btn-bg-color-hover: #0D99FF;  
+  
+  --sec02-bg-color: #0C0C11;
+  --sec03-bg-color: #08080C;
+  --sec04-bg-color: #08080C;
+  --section04-txt-color: #FFFFFF;
+
+  --sec05-bg-color: #0C0C11;
+  --sec06-bg-color: #0C0C11;
+  --sec07-bg-color: #0C0C11;
+  --section7-container-color: #0C0C11;
+  --sec08-bg-color: #0C0C11;
+  --accordion-bg-color: #0C0C11;
+  --accordion-color: #FFFFFF;
+  --content-bg-color: #0C0C11;
+  --sec09-bg-color: #0C0C11;
+  --sec10-bg-color: #0C0C11;
+
+  --sec-heading-color: #FFFFFF;
+
+  --btn-primary-bg-color: #FFFFFF;
+  --btn-primary-color: #08080C;
+  
+}
+
+.lightMode {
+
+  --section-heading-primary-color: black ;
+  --section-heading-secondary-color: #1EE1B3;
+  --heading-white-color: #FFFFFF;
+
+  --section-txt-color: black;
+
+  --nav-bg-color: white;
+  --nav-txt-color: black;
+  --nav-transparent-btn-color:  black;
+  --nav-cyan-btn-bg-color: #1EE1B3;
+  --nav-cyan-btn-color: black;
+  --nav-cyan-btn-bg-color-hover: #0D99FF; 
+
+  --sec02-bg-color: #EFEDED;
+  --sec03-bg-color: #EFEDED;  
+  --sec04-bg-color: #FFFFFF;
+  --section04-txt-color: black; 
+
+  --sec05-bg-color: #2A2320;
+  --sec06-bg-color: #3A322F;
+  --sec07-bg-color: #FFFFFF;
+  --section7-container-color: #0C0C11;
+  --sec-heading-color: #FFFFFF;
+  --sec-heading-color2: #FFFFFF;
+  --sec08-bg-color: #FFFFFF;
+  --accordion-bg-color: #FFFFFF;
+  --accordion-color: black;
+  --content-bg-color: #FFFFFF;
+  --sec09-bg-color: #FFFFFF;
+  --sec10-bg-color: #FFFFFF;
+  --btn-primary-bg-color:black;
+  --btn-primary-color: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #08080C;
+}
+
+// body.dark{
+//   background-color: #EFEDED;
+// }
+
+.page-width {
+  max-width: 1024px;
+  margin: auto;
+  padding-inline: 5%;
+}
+
+
+
+.section-heading {
+  font-family: $heading-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: $heading-font-size;
+  margin-bottom: 0px;
+}
+
+.section-heading-primary {
+  color: var(--section-heading-primary-color);
+}
+
+.section-heading-secondary {
+  color:var(--section-heading-secondary-color);
+}
+
+
+.section-line-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.section-line {
+  border: 1px solid #1EE1B3;
+  margin: 0px;
+  width: 17%;
+}
+
+.section-txt {
+  font-family: $para-font;
+  font-style: normal;
+  font-weight: 300;
+  font-size: $para-font-size;
+  color: var(--section-txt-color);
+  margin: 35px 0px;
+}
+
+

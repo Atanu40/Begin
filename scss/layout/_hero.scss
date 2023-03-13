@@ -1,0 +1,142 @@
+.hero-section {
+  position: relative;
+  height: 90vh;
+
+  @media screen and (max-width: 530px) {
+    height: 60vh;
+  }
+}
+
+.hero-section__img {
+  // position: absolute;
+  // top: 0px;
+  // left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-section__content-1 {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0%, -50%);
+  text-align: right;
+  max-width: 307px;
+  padding: 0px 20px;
+}
+
+.hero-section__para1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  color: #1EE1B3;
+  margin-bottom: -4px;
+}
+
+.hero-section-line-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-section-line {
+  border: 1px solid #1EE1B3;
+  margin: 0px;
+  width: 25px;
+}
+
+.hero-section-heading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 86px;
+  line-height: 90%;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  margin: 0px;
+  margin-right: -2px;
+}
+
+.hero-section__para2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 10px;
+  line-height: 125.5%;
+  color: #FFFFFF;
+
+}
+
+.hero-section__content-1-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 11px;
+  gap: 15px;
+
+  @media screen and (max-width: 840px) {
+    display: none;
+  }
+}
+
+.nav-content-1__btn--transparent {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 10px 28px;
+  color: #FFFFFF;
+  border-radius: 4px;
+  font-size: 11px;
+  line-height: 14px;
+  cursor: pointer;
+  border: 2px solid #131313;
+  opacity: 0.4;
+}
+
+.nav-content-1__btn--black {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  background-color: #121312;
+  text-decoration: none;
+  padding: 10px 21px;
+  color: #FFFFFF;
+  border-radius: 3px;
+  font-size: 11px;
+  line-height: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-content-1__btn--black:hover {
+  background-color: #1EE1B3;
+  //transform: translateX(-100%);
+}
+
+.hero-section__content-2 {
+  position: absolute;
+  bottom: 8%;
+  left: 7%;
+  display: flex;
+  justify-content: space-between;
+  // transform: translate(0%, -50%);
+  //text-align: right;
+  //max-width: 307px;
+  gap: 40px;
+
+  @media screen and (max-width: 960px) {
+    left: 7%;
+  }
+
+  @media screen and (max-width: 530px) {
+    left: 50%;
+    transform: translate(-60%, 0%);
+  }
+}
+
+.hero-section__content-2:hover {
+  cursor: pointer;
+}

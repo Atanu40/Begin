@@ -1,0 +1,102 @@
+.section-08{
+  padding: 30px 0px 20px 0px;
+  background-color: var(--sec08-bg-color);
+}
+
+.section-08.dark1{
+  background-color: #FFFFFF;
+}
+
+.section-08-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section08-heading {
+  font-family: $heading-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: $heading-font-size;
+  margin-bottom: 0px;
+}
+
+.accordion {
+  font-family: $heading-font;
+  font-size: $heading-font-size;
+  margin: 55px 0px;
+  color: var(--accordion-color);
+  background-color: var(--accordion-bg-color);
+  // padding: 45px 45px;
+  border: none;
+  width: 70%;
+
+  @media screen and (max-width: 560px) {
+    width: 100%;
+  }
+}
+
+.accordion.dark1{
+  background-color: #FFFFFF;
+}
+
+.container {
+  position: relative;
+  margin: 10px 10px;
+}
+
+.label {
+  position: relative;
+  padding: 4px 0;
+  color: #565660;
+  cursor: pointer;
+}
+
+.label::before {
+  content: url("../img/downarrow.png");
+  color: #1EE1B3;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  font-weight: 700;
+  transform: translateY(-50%);
+}
+
+
+.content {
+  position: relative;
+  background-color: var(--content-bg-color);
+  height: 0;
+  font-size: 20px;
+  text-align: justify;
+  //width: 780px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.content.dark1{
+  background-color: #FFFFFF;
+}
+
+.accordion hr {
+  //width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+}
+
+
+.accordion .container.active .content {
+  height: 150px;
+}
+
+/* Changes from plus sign to negative sign once active */
+
+.accordion .container.active .label::before {
+  content: url("../img/uparrow.png");
+  font-size: 30px;
+  font-weight: 700
+}
+

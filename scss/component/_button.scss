@@ -1,0 +1,24 @@
+.btn{
+  text-decoration: none;
+  font-weight: 600;
+  font-family: $heading-font;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  padding: 13px 27px;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+
+  @media screen and (max-width: 560px) {
+    display: inline;
+  }
+}
+.btn:hover{
+  background-color: #137460;
+}
+
+.btn-primary{
+  background-color: var(--btn-primary-bg-color);
+  color: var(--btn-primary-color);
+}
