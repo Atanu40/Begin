@@ -15,7 +15,7 @@
 
 .section7-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 2fr;
   background-color: var(--section7-container-color);
   justify-items: center;
   align-items: center;
@@ -27,7 +27,11 @@
 }
 
 .section-07-txt {
-  max-width: 335PX;
+  max-width: 471px;
+
+  @media screen and (max-width: 860px) {
+    max-width: 100%;
+  }
 }
 
 .section07-line {
@@ -84,6 +88,6 @@
 
   @media screen and (max-width: 560px) {
     // width: 300px;
-    top: 30px;
+    top: 4px;
   }
 }

@@ -25,16 +25,17 @@
 
 .accordion {
   font-family: $heading-font;
-  font-size: $heading-font-size;
+  font-size: 19px;
   margin: 55px 0px;
   color: var(--accordion-color);
   background-color: var(--accordion-bg-color);
   // padding: 45px 45px;
   border: none;
-  width: 70%;
+  width: 85%;
 
   @media screen and (max-width: 560px) {
     width: 100%;
+    margin: 40px;
   }
 }
 
@@ -59,25 +60,26 @@
   color: #1EE1B3;
   position: absolute;
   top: 50%;
-  right: -5px;
-  font-size: 30px;
+  right: 1px;
+  font-size: 20px;
   font-weight: 700;
   transform: translateY(-50%);
 }
 
 
-.content {
+.faq-content {
   position: relative;
   background-color: var(--content-bg-color);
   height: 0;
-  font-size: 20px;
+  font-size: $para-font-size;
   text-align: justify;
   //width: 780px;
   overflow: hidden;
   transition: 0.5s;
+  margin: 5px 0px;
 }
 
-.content.dark1{
+.faq-content.dark1{
   background-color: #FFFFFF;
 }
 
@@ -88,8 +90,8 @@
 }
 
 
-.accordion .container.active .content {
-  height: 150px;
+.accordion .container.active .faq-content {
+  height: 376px;
 }
 
 /* Changes from plus sign to negative sign once active */

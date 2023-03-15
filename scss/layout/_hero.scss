@@ -24,6 +24,16 @@
   text-align: right;
   max-width: 307px;
   padding: 0px 20px;
+
+  @media screen and (min-width: 1240px) {
+    position: absolute;
+    top: 50%;
+    right: 11%;
+    transform: translate(0%, -50%);
+    text-align: right;
+    max-width: 307px;
+    padding: 0px 20px;
+  }
 }
 
 .hero-section__para1 {
@@ -63,7 +73,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 200;
-  font-size: 10px;
+  font-size: 17px;
   line-height: 125.5%;
   color: #FFFFFF;
 
@@ -111,6 +121,10 @@
   transition: all 0.2s ease-in-out;
 }
 
+.nav-content-1__btn--transparent:hover {
+  background-color: #1EE1B3;
+}
+
 .nav-content-1__btn--black:hover {
   background-color: #1EE1B3;
   //transform: translateX(-100%);
@@ -139,4 +153,55 @@
 
 .hero-section__content-2:hover {
   cursor: pointer;
+}
+
+.small-device{
+  display: none;
+}
+
+.toggle1{
+  position: relative;
+  // width: 150px;
+  // height: auto;
+  padding: 21px 12px;
+  border-radius: 100px;
+  background-color: #CDCDCD;
+  transition: all 0.5s ease-in-out;
+}
+
+.toggle1.active {
+  background-color: #1EE1B3;
+}
+
+.toggle1::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 12px;
+  //  width: 50px;
+  // height:50px;
+  padding: 10px 10px;
+  border-radius: 25px;
+  background-color: #232427;
+  transform: translateX(-50%);
+  transition: all 0.2s ease-in-out;
+}
+
+.toggle1.active::before {
+  top: calc(100% - 4px - 17px);
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 560px) {
+  .small-device{
+    display: inline-block;
+
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    transform: translate(0%, -3%);
+    text-align: right;
+    max-width: 307px;
+    padding: 0px 20px;
+  }
 }

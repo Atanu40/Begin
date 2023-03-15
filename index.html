@@ -11,7 +11,7 @@
 
 <body>
   <!--head start-->
-  <header>
+  <header class="header">
     <nav class="nav-content nav-content-formate">
       <div class="nav-content__link">
         <ul class="nav-content__list-ul">
@@ -41,6 +41,11 @@
         <a class="nav-content__btn--cyan" href="#">SIGN UP</a>
       </div>
     </nav>
+
+    <div class="mobile-navbar-btn">
+      <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+      <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+    </div>
   </header>
 
   <!--main start-->
@@ -66,11 +71,20 @@
           </div>
         </div>
 
-        <div class="hero-section__content-2">
-          <img src="./img/instagram 1.png" alt="">
-          <img src="./img/facebook_White 1.png" alt="">
-          <img src="./img/Twitter_White 1.png" alt="">
+        <div class="small-device">
+          <a class="toggle1" href="#"></a>
         </div>
+
+
+
+        <a class="footer-ancor" href="/">
+          <div class="hero-section__content-2">
+            <img src="./img/instagram 1.png" alt="">
+            <img src="./img/facebook_White 1.png" alt="">
+            <img src="./img/Twitter_White 1.png" alt="">
+          </div>
+        </a>
+
       </div>
     </div>
 
@@ -86,7 +100,6 @@
         </div>
       </div>
     </div>
-
 
     <!--Section 03-->
     <div class="section-03">
@@ -138,7 +151,6 @@
       </div>
     </div>
 
-
     <!-- section 04 -->
     <div class="section-04">
       <div class="page-width section04-container">
@@ -147,7 +159,7 @@
         </div>
 
         <div class="section04-txt-container">
-          <h2 class="section-heading section-heading-primary">EVERYTHING YOU NEED!</h2>
+          <h2 class="section-heading section-heading-primary section04-heading">EVERYTHING YOU NEED!</h2>
 
           <div class="section-line-container">
             <hr class="section-line">
@@ -159,7 +171,7 @@
             </div>
 
             <div class="section-04-txt1">
-              <h2 class="section-heading section-heading-primary">Body measurement tracking</h2>
+              <h2 class="section05-heading  section-heading section-heading-primary">Body measurement tracking</h2>
               <p class="section04-txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi </p>
             </div>
@@ -171,7 +183,8 @@
             </div>
 
             <div class="section-04-txt1">
-              <h2 class="section-heading section-heading-primary">In home trial of clothes and closet</h2>
+              <h2 class="section05-heading  section-heading section-heading-primary">In home trial of clothes and closet
+              </h2>
               <p class="section04-txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi </p>
             </div>
@@ -183,7 +196,8 @@
             </div>
 
             <div class="section-04-txt1">
-              <h2 class="section-heading section-heading-primary">Recommendation of clothes using AI</h2>
+              <h2 class="section05-heading  section-heading section-heading-primary">Recommendation of clothes using AI
+              </h2>
               <p class="section04-txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi </p>
             </div>
@@ -194,26 +208,64 @@
     </div>
 
     <!-- section 05 -->
+    <!-- <div class="section-05">
+      <div class="page-width section05-container">
+
+        <video  muted loop class="video" id="myVideo">
+          <source src="./video/THE BATMAN – Main Trailer.mp4" type="video/mp4">
+        </video>
+
+        <div class="onvideo-txt">
+          <div class="section05-container-txt">
+            <p class="video-txt sec-heading-clr ">Enhance your shopping experience
+              with elevated expertise and efficient time constraints. </p>
+          </div>
+  
+          <hr class="section05-line">
+  
+  
+          <a id="section05-btn" onclick="myFunction()">
+            <div class="section05-btn">
+              <img class="section05-btn__img" src="./img/play.png" alt="">
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div> -->
+
+    
+    <!-- section 05 -->
     <div class="section-05">
       <div class="page-width section05-container">
         <div class="section05-container-txt">
-          <p class="section-heading section-heading-primary sec-heading-clr">Enhance your shopping experience
+          <p class="video-txt sec-heading-clr ">Enhance your shopping experience
             with elevated expertise and efficient time constraints. </p>
         </div>
 
         <hr class="section05-line">
 
-        <div class="section05-btn">
-          <img class="section05-btn__img" src="./img/play.png" alt="">
-        </div>
+        <a id="section05-btn" onclick="myFunction()">
+          <div class="section05-btn">
+            <img class="section05-btn__img" src="./img/play.png" alt="">
+          </div>
+        </a>
+
       </div>
+    </div>
+
+    <div class="video-content page-width">
+      <video muted loop class="video" id="myVideo">
+        <source src="./video/THE BATMAN – Main Trailer.mp4" type="video/mp4">
+      </video>
     </div>
 
     <!-- section 06 -->
     <div class="section-06">
       <div class="page-width ">
         <div class="section-06-container">
-          <h3 class="section-heading section-heading-primary sec-heading-clr">How it is useful for user and companies</h3>
+          <h3 class="section-heading section-heading-primary sec-heading-clr">How it is useful for user and companies
+          </h3>
           <hr class="section06-line">
         </div>
         <div class="section06-container-card">
@@ -299,7 +351,8 @@
 
             <hr class="section07-line">
 
-            <P class="section-txt sec-heading-clr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            <P class="section-txt sec-heading-clr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh
               euismod tincidunt ut
               laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
               ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
@@ -319,18 +372,19 @@
           </div>
 
           <div class="section07-response-txt">
-            <h2 class="section-heading section-heading-primary">3D clothing simulation on
+            <h2 class="section-heading section-heading-primary sec-heading-clr">3D clothing simulation on
               user-designed metahuman</h2>
 
             <hr class="section07-line">
 
-            <P class="section-txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            <P class="section-txt sec-heading-clr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh
               euismod tincidunt ut
               laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
               ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
               hendrerit in vulputate velit esse molestie</P>
 
-            <a class="btn btn-primary" href="/">DISCOVER MORE</a>
+            <a class="btn btn-primary btn-primary-exp" href="/">DISCOVER MORE</a>
           </div>
         </div>
 
@@ -349,8 +403,8 @@
           <div class="accordion">
             <hr>
             <div class="container">
-              <div class="label">HARDWARE</div>
-              <div class="content">
+              <div class="label">Hardware</div>
+              <p class="faq-content">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio adipisci, alias quis a esse autem
                 reiciendis iure nemo quia. Nostrum, optio voluptas sapiente labore ducimus blanditiis a ad perspiciatis
                 officiis!
@@ -439,12 +493,12 @@
                 Minima, quae aperiam? Quo, placeat corrupti a dolor animi totam ea repellendus quas ratione
                 reprehenderit exercitationem fugiat, expedita rem repellat harum sed vitae nulla facilis, minus alias!
                 Soluta, impedit accusamus?
-              </div>
+              </p>
             </div>
             <hr>
             <div class="container">
               <div class="label">HARDWARE</div>
-              <div class="content">
+              <p class="faq-content ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam distinctio reprehenderit dolore, officia
                 rerum accusamus molestias aperiam pariatur rem perferendis odit placeat velit nisi minus debitis
                 consequatur natus iure! Veritatis.
@@ -531,19 +585,165 @@
                 Assumenda fugiat exercitationem fugit iusto earum officia, impedit id quia quas pariatur. Suscipit
                 voluptates eveniet in necessitatibus iusto doloremque rem magni hic saepe laboriosam neque ex
                 perferendis, accusamus explicabo! Ipsa?
-              </div>
+              </p>
             </div>
             <hr>
             <div class="container">
               <div class="label">HARDWARE</div>
-              <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, harum labore
-                perspiciatis, quis commodi id ipsa reiciendis iure exercitationem ducimus saepe? Magni placeat magnam
-                omnis debitis fugiat, dolore temporibus possimus.</div>
+              <p class="faq-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quis
+                similique, magnam ea molestiae facilis accusamus labore perspiciatis debitis corrupti consequuntur
+                placeat explicabo numquam odit delectus exercitationem laborum sapiente sint!
+                Obcaecati delectus tenetur temporibus officiis harum, nesciunt repudiandae voluptate sint tempora amet
+                ad autem magnam vero id quos soluta nihil commodi facilis asperiores eveniet saepe? Explicabo nemo
+                sapiente accusamus adipisci?
+                Doloribus libero et temporibus debitis earum cupiditate porro quod voluptate est perspiciatis natus nemo
+                cumque tempore, repudiandae itaque suscipit laborum, sit corporis molestiae sequi facilis? Laboriosam
+                voluptatem architecto ex quisquam.
+                Voluptas consequatur cumque deserunt in vel nihil amet, obcaecati officiis ad saepe, repellendus
+                exercitationem aliquam reprehenderit ex nulla alias dolor, ab architecto tempore voluptates. Quis
+                mollitia molestias nesciunt? Repellendus, corporis?
+                Sequi odit fuga adipisci asperiores aliquid tenetur, neque praesentium veritatis blanditiis optio
+                ducimus laudantium sit molestias! Magnam amet, et labore cum praesentium porro nemo neque consectetur
+                molestiae voluptatem qui aut.
+                Hic temporibus est enim sint iusto facilis veritatis culpa unde quo eius voluptatum ipsam molestias
+                quas, ratione sequi expedita. Alias quibusdam magni officia commodi, assumenda perspiciatis dolorum
+                animi beatae modi?
+                Accusamus veritatis dolore officiis, illo eum incidunt reprehenderit. Aperiam, delectus? Expedita, rem.
+                Omnis quidem eligendi, saepe optio quo distinctio. Perspiciatis, voluptatibus adipisci quod eius cumque
+                optio similique blanditiis reiciendis nulla!
+                Quasi minus alias dolore dicta consectetur omnis. Pariatur facilis error perferendis sed corporis!
+                Accusamus iste, animi voluptatum accusantium non omnis ullam corporis modi eius maiores iure inventore,
+                aliquid delectus quia.
+                Eligendi, minus asperiores. Quibusdam ratione, ducimus eveniet ullam quisquam veniam doloremque impedit
+                soluta iste non nesciunt, maiores distinctio dicta blanditiis expedita laudantium eius cupiditate
+                voluptatum temporibus vitae, repudiandae veritatis velit.
+                Laborum quidem accusantium perferendis. Ratione, accusantium. Tenetur ipsa ea laboriosam quos debitis
+                quidem maiores voluptate est sequi facilis? Atque sed beatae excepturi similique doloremque deserunt
+                tempora minima in unde praesentium.
+                Optio voluptate saepe, quam at perferendis necessitatibus. Sed saepe voluptas esse dignissimos nulla,
+                eius officiis nisi ipsum cum ab reiciendis mollitia nostrum, ducimus laborum? Cum fugit iure quia
+                laborum voluptas.
+                Nihil vero labore dolorum eaque consectetur possimus id voluptates. Quos soluta sequi, asperiores,
+                dignissimos commodi libero possimus sit voluptatum nisi tenetur, beatae modi a architecto sed vitae
+                quaerat illo officia!
+                Illum necessitatibus quia dolores nemo reprehenderit repudiandae ab aperiam eligendi sed in molestiae
+                consequuntur dicta sint aut maxime velit enim, mollitia quibusdam dolorem. Cum facilis inventore eius
+                ullam illum perferendis.
+                Saepe quos itaque corrupti veniam distinctio suscipit ad laborum commodi expedita, voluptatem delectus
+                repellendus accusantium eveniet explicabo possimus iste nobis minima architecto adipisci incidunt
+                nesciunt. Quia quod minima doloribus dicta?
+                Officia est et inventore sed deleniti repellat, nulla voluptas sapiente voluptatem harum expedita
+                officiis animi quis recusandae eum iste asperiores rerum. Eos tempore reiciendis rem vero! Inventore
+                quis reiciendis aliquam.
+                Dolor corporis quod ex quo a animi possimus quam blanditiis atque! Saepe vero, minus velit iure nihil
+                iusto dolorum voluptate ipsa, itaque porro distinctio earum tenetur libero vitae enim totam?
+                Asperiores illum hic laudantium, laborum totam facilis repellendus. Doloribus ullam, blanditiis
+                accusantium veniam, libero vitae distinctio necessitatibus aspernatur omnis cum similique tempora
+                facilis fugit possimus voluptates quod sequi quam. Rerum?
+                Vitae aspernatur, fuga nihil eligendi a consequatur impedit sit. Corrupti inventore rerum ut eveniet
+                maiores eius ab, dolorum debitis nulla iste! Unde recusandae deserunt in pariatur maxime eveniet impedit
+                provident.
+                Aliquam, veniam nobis. Neque enim quaerat vero quas praesentium, porro incidunt modi molestiae placeat
+                facilis delectus hic expedita? Doloribus dolor odio enim dignissimos in? Perferendis quod animi iusto
+                eaque temporibus!
+                Ullam temporibus magni quibusdam nostrum, natus consectetur eaque dolor fugit corrupti vel laborum iure
+                ipsam laboriosam excepturi aliquam inventore quis quisquam, et asperiores ab dolorum. Reprehenderit
+                ipsam sed ullam quas.
+                Neque eum tempora, molestiae at saepe dolore, obcaecati debitis officiis veniam illo temporibus
+                consequatur recusandae, ex modi. Eos, ipsum, distinctio itaque ea ex adipisci veritatis repellat quis
+                obcaecati velit unde.
+                Inventore aliquid ducimus illum ea perferendis dolore, quod dicta ipsum eaque natus suscipit, quos
+                earum, numquam voluptate facilis saepe. Accusamus neque voluptates cupiditate deleniti incidunt eum
+                autem. Nostrum, voluptatum obcaecati!
+                Esse perferendis consequatur veritatis atque, unde inventore commodi voluptas provident repudiandae!
+                Deserunt placeat asperiores facere quis libero, alias harum officiis obcaecati laudantium? Cum numquam
+                enim qui architecto dolores officia repudiandae?
+                Cum maxime laboriosam deserunt, sapiente eos aliquam, fugiat inventore facere sunt, voluptatibus quaerat
+                iste! Sed laboriosam sunt harum minus, quos, porro eaque veniam sint obcaecati nostrum quasi, dolor
+                excepturi vitae?
+                Praesentium facere iusto itaque quae harum corporis non veritatis magnam voluptas quibusdam omnis
+                blanditiis ab reprehenderit totam quasi odio, accusantium magni fuga aliquid sequi ea dicta. Consectetur
+                numquam officiis aperiam.
+                Magni debitis mollitia sint quia illo voluptas reprehenderit, delectus accusamus fugit velit itaque quas
+                minus? Eius numquam officiis eligendi vero veniam, error quas, nam ipsam, repellendus obcaecati quo
+                voluptatum recusandae!
+                Nisi dolores cupiditate aliquid, labore quia illum corrupti voluptate similique ex delectus nobis id,
+                quis ratione distinctio fugiat eos. Suscipit ut molestiae beatae quidem unde odit? Aliquid delectus
+                velit vel.
+                Architecto voluptatem quas consectetur culpa fugiat laboriosam, aperiam vero atque, odio sequi est
+                delectus in odit aliquam quasi autem sunt facere similique? Accusantium debitis eius architecto numquam
+                in ex dolore.
+                Eius, distinctio obcaecati ipsum enim iure labore excepturi iste, quidem cupiditate totam fugit. Magni
+                quae, incidunt repellendus corporis minima, id accusantium reiciendis similique natus cum, corrupti
+                magnam commodi animi numquam!
+                Commodi suscipit voluptatum deleniti. Ullam perspiciatis officia necessitatibus quis ex, ea molestias
+                totam enim, praesentium culpa quia quae. Ea modi a omnis, quisquam officiis est atque adipisci molestias
+                expedita mollitia?
+                Expedita, fugit laboriosam laborum dolore quo maiores dignissimos? Possimus est harum animi voluptate
+                nobis, debitis odio inventore odit nam tenetur praesentium rem necessitatibus eius ad in accusamus
+                veniam ea maiores?
+                Porro ipsa, ullam, sequi veniam suscipit eos ut incidunt corrupti tempore quod voluptates, cumque
+                praesentium itaque assumenda vitae nobis quia error cum saepe consectetur debitis eum quidem. Quasi,
+                ipsum consequatur?
+                Nam consequatur consectetur architecto, dolorem numquam commodi minima! Consectetur velit nihil vero
+                accusamus, vel atque, deserunt corporis dolorum sed molestiae illum quaerat nulla dolore labore,
+                necessitatibus totam eveniet ipsa quisquam?
+                Sed obcaecati porro consequuntur. Blanditiis perspiciatis recusandae dolorem? Quasi illum cumque quas
+                rerum! Possimus odit repellendus velit amet, ab ipsam reiciendis sint, quae, nostrum unde quas omnis
+                nihil laudantium adipisci.
+                Obcaecati, iure nulla odit velit doloribus laborum? Sunt unde, facere dolore eaque illum animi et
+                consequuntur dolor eligendi magni maxime nesciunt quisquam, ipsa tenetur doloribus, nemo amet eius cum
+                praesentium.
+                Nulla ipsum repellendus reprehenderit, molestias facilis similique dignissimos rem quo doloremque
+                quisquam unde, neque, aliquid corrupti? Expedita unde exercitationem temporibus dolores harum blanditiis
+                nihil maxime excepturi possimus? Magni, suscipit atque.
+                Quo culpa, tempora, molestiae dolor rerum minima voluptas suscipit repellat autem temporibus veniam
+                explicabo similique unde provident aliquam nulla corporis neque vero doloribus animi sequi. Ea maxime
+                eos soluta reiciendis!
+                Cum, repellendus deleniti asperiores accusantium harum natus repudiandae. Enim possimus autem,
+                laboriosam totam voluptate ipsum quod consequatur veniam, quos odio quo modi rerum nihil amet ipsam
+                soluta nesciunt. Quas, magni.
+                Eaque, corporis saepe porro consequatur quas, illo assumenda iste doloribus explicabo deleniti modi
+                accusamus quidem rerum odit aliquid asperiores at sunt odio inventore voluptates quos possimus laborum!
+                Aspernatur, alias perferendis?
+                Enim amet quam esse voluptatibus quibusdam ut ea fugiat, consequatur, officiis impedit eius eligendi
+                aliquam rerum repudiandae molestias, vitae sunt corrupti. Fugiat enim nemo ad dolores facilis eveniet
+                deserunt id?
+                Itaque, recusandae nostrum. Temporibus blanditiis ullam similique omnis, nobis obcaecati quas quidem in
+                a voluptas sequi incidunt! Officia assumenda laborum officiis numquam quo, illum sapiente hic
+                consequuntur sed quam quos.
+                Alias ullam quisquam enim pariatur est fugiat impedit placeat laboriosam cum, ab, perspiciatis
+                consectetur voluptatum quas deleniti ad, sapiente dolor. Dolorum, cupiditate itaque dolores nostrum
+                fugiat temporibus sunt hic harum?
+                Assumenda quam libero perspiciatis deleniti odio vero, sint eveniet qui nesciunt laborum quas fuga.
+                Aliquid delectus facere, eaque aut iste praesentium expedita velit facilis necessitatibus, cum ipsa,
+                dolorum nam vero?
+                Iste dicta eveniet voluptate iusto minus sit voluptates. Adipisci nisi reprehenderit iusto minus soluta.
+                Dignissimos voluptates totam numquam, eligendi odio harum? Consequatur dolores quod quidem nam expedita
+                voluptas hic illo!
+                Natus, obcaecati nihil at praesentium officiis inventore exercitationem optio repellendus odio ut
+                officia architecto consequuntur quo possimus fuga incidunt reprehenderit animi reiciendis cum porro,
+                excepturi accusamus dicta quisquam! Aliquam, nobis.
+                Dicta in amet dolorem deleniti facilis eligendi commodi fugit perferendis sint accusantium fuga numquam,
+                incidunt at reprehenderit aliquid, magni natus voluptas maiores repellendus hic eveniet atque dolor. In,
+                eius voluptate?
+                Cupiditate tenetur expedita, voluptate, quo eos repudiandae animi eius fuga optio hic praesentium fugiat
+                magni fugit. Doloremque, expedita? Ad corporis dicta ea quisquam quibusdam mollitia autem expedita
+                voluptas doloribus blanditiis!
+                Dolorem itaque fugiat reiciendis ullam a. Ipsam voluptatibus placeat voluptatem obcaecati, omnis
+                reprehenderit deleniti, veniam at aperiam facilis dignissimos consectetur doloremque dicta ea? Tenetur
+                magnam ad, voluptatem harum labore id.
+                Ab tempore odit quaerat a delectus, voluptates vel libero earum dolorum ut accusantium officiis eum
+                natus repellendus optio. Reprehenderit fugiat fugit nesciunt error possimus sapiente, modi ex odio
+                consequatur quas?
+                Necessitatibus suscipit labore dolorum rerum doloribus, doloremque impedit tempore, itaque aperiam
+                quisquam in cumque, vel quibusdam tempora! Beatae excepturi dignissimos, voluptate voluptas alias autem
+                pariatur consequuntur obcaecati odit fuga eveniet!.</p>
             </div>
             <hr>
             <div class="container">
               <div class="label">HARDWARE</div>
-              <div class="content">
+              <p class="faq-content">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae pariatur mollitia, assumenda
                 perspiciatis repellat officiis fuga natus error consequuntur atque officia ea maiores, aspernatur, optio
                 illum eius voluptate magni nulla.
@@ -630,12 +830,12 @@
                 Sit ipsum vero quisquam ducimus assumenda doloremque consequatur ullam quis nihil unde hic alias,
                 perferendis tenetur consequuntur cumque laborum voluptatum incidunt odit possimus velit quod. Totam
                 facere adipisci excepturi tempora.
-              </div>
+              </p>
             </div>
             <hr>
             <div class="container">
               <div class="label">HARDWARE</div>
-              <div class="content">
+              <p class="faq-content ">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat iure nobis, itaque perspiciatis
                 deleniti dicta ipsum, obcaecati quis corrupti perferendis distinctio minus explicabo impedit? Asperiores
                 quae fugit nobis? Reprehenderit, voluptate?
@@ -725,7 +925,7 @@
                 Quo, commodi. Quos vitae tempore error eligendi. Iste officiis, molestiae distinctio nulla maxime
                 doloribus temporibus voluptas voluptatum deleniti mollitia aperiam tempora nobis perferendis! Aliquam
                 doloremque similique impedit repudiandae nisi. Totam.
-              </div>
+              </p>
             </div>
             <hr>
           </div>
@@ -796,7 +996,8 @@
         <img class="section11-img" src="./img/section11.png" alt="">
 
         <div class="section11-txt">
-          <h2 class="section11-heading section-heading-primary sec-heading-clr">Using <span style="color: #91E227;"> nvidia </span>
+          <h2 class="section11-heading section-heading-primary sec-heading-clr">Using <span style="color: #91E227;">
+              nvidia </span>
             cloud
             to run and
             produce realistic results.</h2>
@@ -813,7 +1014,8 @@
         </div>
 
         <div class="section-12__right-txt">
-          <p class="section-txt sec-heading-clr">In collaboration with ZOZOSUIT, our mirror will also provide a highly accurate
+          <p class="section-txt sec-heading-clr">In collaboration with ZOZOSUIT, our mirror will also provide a highly
+            accurate
             replica of the user's body via scanning and image processing.
             Through this, we will also be able to provide motion tracking for the
             user-customized metahuman in real time, making the experience incredibly
@@ -830,34 +1032,45 @@
 
   <footer class="footer">
     <div class="footer-contain1">
-      <div class="footer-img-contain">
+      <a class="footer-img-contain fbtn">
         <img class="footer-img" src="./img/Polygon 1.png" alt="">
-      </div>
+      </a>
 
-      <h3 class="footer-section-heading">BEGIN</h3>
+      <a class="footer-ancor" href="/">
+        <h3 class="footer-section-heading">BEGIN</h3>
+      </a>
 
-      <div class="footer-icon">
-        <img src="./img/Group 17.png" alt="">
-        <img src="./img/Group 18.png" alt="">
-        <img src="./img/Group 19.png" alt="">
-      </div>
+      <a class="footer-ancor" href="/">
+        <div class="footer-icon">
+          <img src="./img/Group 17.png" alt="">
+          <img src="./img/Group 18.png" alt="">
+          <img src="./img/Group 19.png" alt="">
+        </div>
+      </a>
     </div>
 
     <div class="footer-contain2">
-      <div class="footer-contain2-inner">
-        <p class="section-txt sec-heading-clr">&copy;</p>
-        <p class="section-txt sec-heading-clr">All Rights Reserved</p>
-      </div>
+      <a class="footer-ancor" href="/">
+        <div class="footer-contain2-inner">
+          <p class="section-txt sec-heading-clr">&copy;</p>
+          <p class="section-txt sec-heading-clr">All Rights Reserved</p>
+        </div>
+      </a>
 
-      <div class="footer-contain2-inner footer-response">
-        <p class="section-txt sec-heading-clr">Terms and Conditions .</p>
-        <p class="section-txt sec-heading-clr">Privacy Policy</p>
-      </div>
+      <a class="footer-ancor" href="/">
+        <div class="footer-contain2-inner footer-response">
+          <p class="section-txt sec-heading-clr">Terms and Conditions .</p>
+          <p class="section-txt sec-heading-clr">Privacy Policy</p>
+        </div>
+      </a>
     </div>
   </footer>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <script src="./main.js"></script>
 </body>
 
 </html>
-

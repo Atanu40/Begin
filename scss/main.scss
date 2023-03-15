@@ -20,6 +20,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,400;1,700;1,900&family=Work+Sans:wght@500&display=swap');
 
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
+
 :root {
 
   --section-heading-primary-color: #FFFFFF;
@@ -31,16 +34,17 @@
   --nav-txt-color: white;
   --nav-transparent-btn-color: white;
   --nav-transparent-btn-color-hover: #1EE1B3;
-  --nav-cyan-btn-bg-color: #1EE1B3;              
-  --nav-cyan-btn-color: #FFFFFF;              
-  --nav-cyan-btn-bg-color-hover: #0D99FF;  
-  
+  --nav-cyan-btn-bg-color: #1EE1B3;
+  --nav-cyan-btn-color: #FFFFFF;
+  --nav-cyan-btn-bg-color-hover: #0D99FF;
+
   --sec02-bg-color: #0C0C11;
   --sec03-bg-color: #08080C;
   --sec04-bg-color: #08080C;
   --section04-txt-color: #FFFFFF;
 
-  --sec05-bg-color: #0C0C11;
+  --sec05-bg-color:
+    #0C0C11;
   --sec06-bg-color: #0C0C11;
   --sec07-bg-color: #0C0C11;
   --section7-container-color: #0C0C11;
@@ -55,12 +59,17 @@
 
   --btn-primary-bg-color: #FFFFFF;
   --btn-primary-color: #08080C;
-  
+
+  --btn-primary-exp-bg-color: #FFFFFF;
+  --btn-primary-exp-color: #161616;
+
+  --nav-content__link-bg-color: #0C0C11;
+
 }
 
 .lightMode {
 
-  --section-heading-primary-color: black ;
+  --section-heading-primary-color: black;
   --section-heading-secondary-color: #1EE1B3;
   --heading-white-color: #FFFFFF;
 
@@ -68,15 +77,15 @@
 
   --nav-bg-color: white;
   --nav-txt-color: black;
-  --nav-transparent-btn-color:  black;
+  --nav-transparent-btn-color: black;
   --nav-cyan-btn-bg-color: #1EE1B3;
   --nav-cyan-btn-color: black;
-  --nav-cyan-btn-bg-color-hover: #0D99FF; 
+  --nav-cyan-btn-bg-color-hover: #0D99FF;
 
   --sec02-bg-color: #EFEDED;
-  --sec03-bg-color: #EFEDED;  
+  --sec03-bg-color: #EFEDED;
   --sec04-bg-color: #FFFFFF;
-  --section04-txt-color: black; 
+  --section04-txt-color: black;
 
   --sec05-bg-color: #2A2320;
   --sec06-bg-color: #3A322F;
@@ -90,8 +99,11 @@
   --content-bg-color: #FFFFFF;
   --sec09-bg-color: #FFFFFF;
   --sec10-bg-color: #FFFFFF;
-  --btn-primary-bg-color:black;
+  --btn-primary-bg-color: black;
   --btn-primary-color: #FFFFFF;
+  --btn-primary-exp-color: #161616;
+
+  --nav-content__link-bg-color: #96969e;
 }
 
 body {
@@ -100,6 +112,7 @@ body {
   box-sizing: border-box;
   scroll-behavior: smooth;
   background-color: #08080C;
+  overflow-x: hidden;
 }
 
 // body.dark{
@@ -110,6 +123,10 @@ body {
   max-width: 1024px;
   margin: auto;
   padding-inline: 5%;
+
+  // @media (min-width: 1524px) {
+  //   max-width: 1500px;
+  // }
 }
 
 
@@ -127,13 +144,14 @@ body {
 }
 
 .section-heading-secondary {
-  color:var(--section-heading-secondary-color);
+  color: var(--section-heading-secondary-color);
 }
 
 
 .section-line-container {
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 15px;
 }
 
 .section-line {
@@ -150,5 +168,4 @@ body {
   color: var(--section-txt-color);
   margin: 35px 0px;
 }
-
 

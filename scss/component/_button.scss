@@ -22,3 +22,9 @@
   background-color: var(--btn-primary-bg-color);
   color: var(--btn-primary-color);
 }
+
+.btn-primary-exp{
+  background-color: var(--btn-primary-exp-bg-color) !important;
+  color: var(--btn-primary-exp-color) !important;
+  margin-left: 1px;
+}
