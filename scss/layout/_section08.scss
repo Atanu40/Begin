@@ -57,7 +57,7 @@
 
 .label::before {
   content: url("../img/downarrow.png");
-  color: #1EE1B3;
+  color: var(--label-bg-color);
   position: absolute;
   top: 50%;
   right: 1px;
