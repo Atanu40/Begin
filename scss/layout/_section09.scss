@@ -16,12 +16,23 @@
 
 .flickity-viewport{
   width: 100%;
-  height: 100%;
 }
+
+// .flickity-prev-next-button {
+//   top: 50%;
+//   width: 36px;
+//   height: 36px;
+//   border-radius: 50%;
+//   transform: translateY(-50%);
+// }
 
 .section-09-img {
   width: 220px;
   height: auto;
+
+  // @media screen and (max-width: 530px) {
+  //   width: 170px;
+  // }
 }
 
 .sec-img {
@@ -31,6 +42,7 @@
 }
 
 @media screen and (max-width: 560px) {
+
   .left-img-arrow {
     display: none;
   }

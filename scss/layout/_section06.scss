@@ -48,6 +48,7 @@
   @media screen and (max-width: 460px) {
     grid-template-columns: 1fr;
     row-gap: 15px;
+    column-gap: 0px;
   }
 }
 
@@ -58,6 +59,10 @@
   max-width: 257px;
   border: 2px solid #0C0C11;
   background-color: #0C0C11;
+
+  @media screen and (max-width: 460px) {
+    padding: 2px 6px;
+  }
 }
 
 .card-head {
