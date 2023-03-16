@@ -66,13 +66,12 @@
   transform: translateY(-50%);
 }
 
-
 .faq-content {
   position: relative;
   background-color: var(--content-bg-color);
   height: 0;
   font-size: $para-font-size;
-  text-align: justify;
+  //text-align: justify;
   //width: 780px;
   overflow: hidden;
   transition: 0.5s;
@@ -89,16 +88,12 @@
   border: 1px solid grey;
 }
 
-
 .accordion .container.active .faq-content {
   height: 376px;
 }
-
 /* Changes from plus sign to negative sign once active */
-
 .accordion .container.active .label::before {
   content: url("../img/uparrow.png");
   font-size: 30px;
   font-weight: 700
 }
-

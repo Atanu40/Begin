@@ -1,4 +1,4 @@
-.section-03{
+.section-03 {
   padding: 30px 0px 50px 0px;
   background-color: var(--sec03-bg-color);
 
@@ -13,8 +13,8 @@
   column-gap: 125px;
   align-items: center;
 
-  @media screen and (max-width: 640px) {
-    row-gap: 15px;
+  @media screen and (max-width: 690px) {
+    row-gap: 25px;
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -23,18 +23,21 @@
 .section-03-para {
   margin: 25px 0px;
 }
-// .section03-container__img {
-//  position: relative;
-// }
 
-.section03-container__img{
-  @media screen and (max-width: 640px) {
+.section03-container__img {
+  position: relative;
+}
+
+.section03-container__img {
+  @media screen and (max-width: 690px) {
     grid-area: 1/1/1/1;
   }
 }
-.section03-container__innerimg{
+
+.section03-container__innerimg {
   position: relative;
-  height: 0;
+  //height: 100% !important;
+  height: 0px;
   overflow: hidden;
   padding-bottom: 138%;
 
@@ -44,13 +47,12 @@
   @media screen and (max-width: 640px) {
     padding-bottom: 105%;
   }
-
 }
 
-.section03__img{
-  position: absolute;
-  top: 0;
-  left: 0;
+.section03__img {
+  //position: absolute;
+  //top: 0;
+  //left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -69,4 +71,26 @@
   // width: 100%;
   // height: 100%;
   // object-fit: cover;
+}
+
+.flickity-viewport {
+  width: 100%;
+  //height: 100%;
+}
+
+.section03-container__innerimg .flickity-prev-next-button.previous {
+  left: auto;
+  right: 50px;
+  top: 30px;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+}
+
+.section03-container__innerimg .flickity-prev-next-button.next {
+  right: 10px;
+  top: 30px;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
 }

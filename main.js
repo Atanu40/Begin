@@ -66,17 +66,12 @@ const toggleNavbar = () => {
   nav_header.classList.toggle("active");
   document.body.style.overflow = "hidden";
 
-  if(nav_header.classList.contains("active") === false){
+  if (nav_header.classList.contains("active") === false) {
     document.body.style.overflow = "auto";
   }
 };
 
 mobile_nav.addEventListener("click", () => toggleNavbar());
-
-
-
-
-
 
 // -----------------Accordion---------------------//
 const accordion = document.getElementsByClassName("container");
@@ -95,10 +90,7 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
 mybutton.addEventListener("click", () => topFunction());
-
-
 
 // -----------------VIDEO  PLAY  BTN ---------------------//
 
@@ -110,12 +102,35 @@ var btn = document.getElementById("section05-btn");
 // Pause and play the video, and change the button text
 function myFunction() {
   if (video.paused) {
-    video.classList.add("active");
-    //section05extra.classList.add("active");
+    //video.classList.add("active");
+    btn.classList.add("active");
     video.play();
-    // btn.innerHTML = "Pause";
-  } else {
+  } else if (video.play) {
+    //video.classList.add("active");
     video.pause();
-    // btn.innerHTML = "Play";
   }
 }
+
+//-----------------SLIDER MANUAL HANDLE ---------------------//
+
+// var currentIndex = 1;
+// // displaySlides(currentIndex);
+
+// function setSlide(num) {
+//   displaySlides((currentIndex += num));
+// }
+
+// function displaySlides(num) {
+//   var x;
+//   var slides = document.getElementsByClassName("section-09-img");
+//   if (num > slides.length) {
+//     currentIndex = 1;
+//   }
+//   if (num < 1) {
+//     currentIndex = slides.length;
+//   }
+//   for (x = 0; x < slides.length; x++) {
+//     slides[x].style.display = "none";
+//   }
+//   slides[currentIndex - 1].style.display = "block";
+// }

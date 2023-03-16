@@ -1,0 +1,36 @@
+.section-heading {
+  font-family: $heading-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: $heading-font-size;
+  margin-bottom: 0px;
+}
+
+.section-heading-primary {
+  color: var(--section-heading-primary-color);
+}
+
+.section-heading-secondary {
+  color: var(--section-heading-secondary-color);
+}
+
+.section-line-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.section-line {
+  border: 1px solid #1EE1B3;
+  margin: 0px;
+  width: 17%;
+}
+
+.section-txt {
+  font-family: $para-font;
+  font-style: normal;
+  font-weight: 300;
+  font-size: $para-font-size;
+  color: var(--section-txt-color);
+  margin: 35px 0px;
+}
