@@ -100,7 +100,8 @@ var video = document.getElementById("myVideo");
 var btn = document.getElementById("section05-btn");
 
 // Pause and play the video, and change the button text
-function myFunction() {
+function testFunction() {
+  console.log('testingg')
   if (video.paused) {
     //video.classList.add("active");
     btn.classList.add("active");

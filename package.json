@@ -46,14 +46,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Genesys-Softwares/FIE-atanu-saha.git"
+    "url": "git+https://github.com/Atanu40/Begin"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Genesys-Softwares/FIE-atanu-saha/issues"
+    "url": "https://github.com/Atanu40/Begin/issues"
   },
-  "homepage": "https://github.com/Genesys-Softwares/FIE-atanu-saha#readme",
+  "homepage": "https://github.com/Atanu40/Begin#readme",
   "description": ""
 }
